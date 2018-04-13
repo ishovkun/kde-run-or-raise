@@ -49,7 +49,7 @@ function run_or_raise(/*string*/ name, /* bool */ toggle, /*string*/ command)
 // to test function
 // run_or_raise("konsole", true);
 
-registerShortcut("toggle konsole", "toggle app konsole", "Meta+~",
+registerShortcut("toggle-konsole", "toggle-app-konsole", "Meta+`",
                  function() {run_or_raise("konsole", /*toggle = */ true)});
 
 // registerShortcut("toggle-dolphin", "toggle app dolphin", "Meta+F",

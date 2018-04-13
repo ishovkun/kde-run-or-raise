@@ -23,7 +23,7 @@ run_or_raise("appname", true, "/path/to/executable");
 ## Install
 This should probably work. Haven't tested yet.
 '''
-plasmapkg -t kwinscript -i .
+plasmapkg2 -t kwinscript -i .
 '''
 
 ## Testing
