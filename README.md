@@ -33,5 +33,5 @@ qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.showInteractiveConsol
 '''
 or also from the command line
 '''
-qdbus org.kde.KWin /Scripting loadScript ~/path/to/main.js; qdbus org.kde.KWin /Scripting start
+qdbus org.kde.KWin /Scripting loadScript ~/path/to/main.kwinscript; qdbus org.kde.KWin /Scripting start
 '''
