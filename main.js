@@ -1,5 +1,5 @@
 
-function run_or_raise(name, toggle, command)
+function run_or_raise(/*string*/ name, /* bool */ toggle, /*string*/ command)
 {
     if (typeof(toggle)==='undefined') toggle = true;
     if (typeof(command)==='undefined') command = name;
@@ -12,7 +12,7 @@ function run_or_raise(name, toggle, command)
         var client = clients[i];
         var title = client.caption;
         var found_string = title.toLowerCase().indexOf(name.toLowerCase());
-        //print(title);
+
         if (found_string != -1)
         {
             found = true;
@@ -46,9 +46,14 @@ function run_or_raise(name, toggle, command)
 
 }
 
-// run_or_raise("konsole");
-// registerShortcut("toggle konsole", "toggle app konsole", "Meta+~",
-//                  function() {run_or_raise("konsole", /*toggle = */ true)});
+// to test function
+// run_or_raise("konsole", true);
 
-// registerShortcut("toggle-dolphin", "toggle app dolphin", "Meta+F",
-//                  function() {run_or_raise("Dolphin")});
+registerShortcut("toggle konsole", "toggle app konsole", "Meta+~",
+                 function() {run_or_raise("konsole", /*toggle = */ true)});
+
+registerShortcut("toggle-dolphin", "toggle app dolphin", "Meta+F",
+                 function() {run_or_raise("Dolphin", true)});
+
+registerShortcut("toggle-korganizer", "toggle app KOrganizer", "Meta+C",
+                 function() {run_or_raise("KOrganizer")});
