@@ -52,8 +52,8 @@ function run_or_raise(/*string*/ name, /* bool */ toggle, /*string*/ command)
 registerShortcut("toggle konsole", "toggle app konsole", "Meta+~",
                  function() {run_or_raise("konsole", /*toggle = */ true)});
 
-registerShortcut("toggle-dolphin", "toggle app dolphin", "Meta+F",
-                 function() {run_or_raise("Dolphin", true)});
+// registerShortcut("toggle-dolphin", "toggle app dolphin", "Meta+F",
+//                  function() {run_or_raise("Dolphin", true)});
 
-registerShortcut("toggle-korganizer", "toggle app KOrganizer", "Meta+C",
-                 function() {run_or_raise("KOrganizer")});
+// registerShortcut("toggle-korganizer", "toggle app KOrganizer", "Meta+C",
+//                  function() {run_or_raise("KOrganizer")});
