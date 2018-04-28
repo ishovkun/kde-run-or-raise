@@ -7,7 +7,7 @@ Keywords=
 Type=Service
 
 X-Plasma-API=javascript
-X-Plasma-MainScript=main.kwinscript
+X-Plasma-MainScript=code/main.js
 X-KDE-PluginInfo-Author=Igor Shovkun
 X-KDE-PluginInfo-Email=igshov@gmail.com
 X-KDE-PluginInfo-Name=raise-or-run
@@ -16,4 +16,4 @@ X-KDE-PluginInfo-Version=0.1
 X-KDE-PluginInfo-Depends=
 X-KDE-PluginInfo-License=GPL
 X-KDE-ServiceTypes=KWin/Script
-X-KDE-PluginKeyword=raise-or-run
+X-KDE-PluginKeyword=RaiseOrRun

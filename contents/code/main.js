@@ -49,11 +49,11 @@ function run_or_raise(/*string*/ name, /* bool */ toggle, /*string*/ command)
 // to test function
 // run_or_raise("konsole", true);
 
-registerShortcut("toggle-konsole", "toggle-app-konsole", "Meta+`",
+registerShortcut("KWin Script: Run or raise konsole", "", "",
                  function() {run_or_raise("konsole", /*toggle = */ true)});
 
-// registerShortcut("toggle-dolphin", "toggle app dolphin", "Meta+F",
-//                  function() {run_or_raise("Dolphin", true)});
+// registerShortcut("KWin Script: Run or raise Dolphin", "", "",
+//                  function() {run_or_raise("dolphin", /*toggle = */ true)});
 
 // registerShortcut("toggle-korganizer", "toggle app KOrganizer", "Meta+C",
 //                  function() {run_or_raise("KOrganizer")});
