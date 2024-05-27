@@ -25,10 +25,15 @@ run_or_raise("appname", true, "/path/to/executable");
 '''
 
 ## Install
-This should probably work. Haven't tested yet.
+This should probably work when installing from scratch.
 '''
-plasmapkg2 -t kwinscript -i .
+kpackagetool6 -t KWin/Script --install .
 '''
+If you changed your script by adding new programs, run this instead:
+'''
+kpackagetool6 -t KWin/Script --upgrade .
+'''
+
 
 ## Testing
 You can test or modify the script in the interactive console
@@ -39,3 +44,9 @@ or also from the command line
 '''
 qdbus org.kde.KWin /Scripting loadScript ~/path/to/main.js; qdbus org.kde.KWin /Scripting start
 '''
+
+## Debugging 
+As in Plasma 6 interactive console printing does not work use to see the output
+``` sh
+journalctl -g "js:" -f
+```

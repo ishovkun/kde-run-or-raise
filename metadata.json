@@ -1,0 +1,20 @@
+{
+    "KPackageStructure": "KWin/Script",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "igshov@gmail.com",
+                "Name": "Igor Shovkun"
+            }
+        ],
+        "Description": "Activate or launch applications with custom shortcuts",
+        "Icon": "dashboard-show",
+        "Id": "raise-or-run",
+        "License": "GPL",
+        "Name": "RaiseOrRun",
+        "Version": "1.0"
+    },
+    "X-KDE-PluginKeyword": "RaiseOrRun",
+    "X-Plasma-API": "javascript",
+    "X-Plasma-MainScript": "code/main.js"
+}
