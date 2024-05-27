@@ -18,12 +18,10 @@ function run_or_raise(/*string*/ name, /* bool */ toggle, /*string*/ command)
         if (found_string != -1)
         {
             found = true;
-            // print(title);
             if (workspace.activeWindow != client)
             {
                 if (toggle)
-                    client.desktop = workspace.currentDesktop;
-                // workspace.activeClient = client;
+                    client.desktops = workspace.currentDesktop;
                 workspace.activeWindow = client;
             }
             else
